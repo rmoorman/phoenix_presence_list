@@ -1,10 +1,10 @@
 defmodule PhoenixPresenceList.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
 
   @description """
-  Keep presence state up to date using broadcasted presence_diff data.
+  Keep a presence list up to date using broadcasted presence_diff data.
   """
 
   def project() do

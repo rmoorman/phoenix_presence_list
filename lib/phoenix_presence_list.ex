@@ -4,7 +4,7 @@ defmodule PhoenixPresenceList do
   """
 
   @doc """
-  Sync the given presence state using a diff of presence join and leave events.
+  Sync the given presence list using a diff of presence join and leave events.
 
   Returns the updated presence list. In case information on leaves and joins
   is needed, have a look at `apply_diff/2`.
@@ -30,9 +30,9 @@ defmodule PhoenixPresenceList do
   end
 
   @doc """
-  Sync the given presence state using a new presence state.
+  Sync the given presence list using a new presence list.
 
-  Returns the new presence state. In case information on leaves and joins is
+  Returns the new presence list. In case information on leaves and joins is
   needed, have a look at `apply_state/2`.
   """
   def sync_state(_state, new_state) do
@@ -40,9 +40,9 @@ defmodule PhoenixPresenceList do
   end
 
   @doc """
-  Apply the given presence state to the given presence state.
+  Apply a presence list to another presence list.
 
-  Returns a tuple containing the new presence state along with two lists
+  Returns a tuple containing the new presence list along with two lists
   containing information about the joins and leaves that took place.
 
   ## Examples
@@ -96,10 +96,10 @@ defmodule PhoenixPresenceList do
   end
 
   @doc """
-  Apply the given joins and leaves diff to the given presence state.
+  Apply the given joins and leaves diff to the given presence list.
 
-  Returns a tuple containing the updated state as well as two lists with
-  information about the joins and leaves that took place.
+  Returns a tuple containing the updated presence list as well as two lists
+  with information about the joins and leaves that took place.
 
   ## Examples
 

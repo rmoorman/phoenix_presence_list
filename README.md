@@ -1,6 +1,6 @@
 # PhoenixPresenceList
 
-Keep presence state up to date using broadcasted presence_diff data.
+Keep a presence list up to date using broadcasted presence_diff data.
 
 The functionality in this package is closely modelled after what the `syncState`
 and `syncDiff` functions on `Presence` in `phoenix.js` provide.
