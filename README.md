@@ -18,8 +18,8 @@ Your GenServer module is named `FooWeb.Bar`, phoenix presence module is named
 `FooWeb.Presence`, your endpoint is named `FooWeb.Endpoint` and you have a
 channel with the topic `lobby` where you are tracking presence.
 
-Then in case you could roughly do something like this in order to keep a
-list of presences inside `FooWeb.Bar`:
+Then you could do something like this in order to keep a list of presences
+inside `FooWeb.Bar`:
 
 ```elixir
 defmodule FooWeb.Bar do
